@@ -1,6 +1,6 @@
 import './HomeView.css';
 import { useNavigate } from 'react-router-dom';
-import  paths  from '../../routes/paths';
+import paths from '../../routes/paths';
 
 
 function Home() {
@@ -27,7 +27,7 @@ function Home() {
   };
 
   return (
-    
+
     <div className="home-view">
 
       <nav className="home-nav">
@@ -42,12 +42,45 @@ function Home() {
       </nav>
 
       <div className="home-content">
-        <h1>Welcome to FinCoin</h1>
-        <p>Your financial journey starts here.</p>
+
+        <div className="home-header">
+          <h1>Welcome to FinCoin</h1>
+        </div>
+
+        <div className="home-body">
+
+          <div className="home-graphic">
+            <div className="home-graphic-income">
+              <h3>Income</h3>
+            </div>
+
+            <div className="home-graphic-expense">
+              <h3>Expense</h3>
+            </div>
+
+            <div className="home-graphic-investiment">
+              <h3>Investiment</h3>
+            </div>
+
+          </div>
+
+          <div className="home-balance">
+
+            <div className="home-balance-total">
+              <h3>Total Balance</h3>
+              <p>$0.00</p>
+            </div>
+
+            <div className="home-balance-graphic">
+              <h3>Balance Graphic</h3>
+            </div>
+          </div>
+
+        </div>
+        <footer className="home-footer">
+          <p>&copy; 2025 FinCoin. All rights reserved.</p>
+        </footer>
       </div>
-      <footer className="home-footer">
-        <p>&copy; 2023 FinCoin. All rights reserved.</p>
-      </footer>
     </div>
   );
 }
